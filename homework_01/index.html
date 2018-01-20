@@ -16,7 +16,7 @@
 
 
           <header>
-              <img src="./EPAM_logo.svg" alt="">
+              <img src="./EPAM_logo.svg" alt="EPAM logo">
           </header>
 
 
@@ -36,13 +36,15 @@
               <h2><a name="list"></a>Ordered List</h2>
 
               <ul>
-                  <li><h1>Heading 1</h1></li>
-                  <ul>
-                      <li><h2>Heading 2</h2></li>
+                  <li><h1>Heading 1</h1>
                       <ul>
-                          <li><h3>Heading 3</h3></li>
+                          <li><h2>Heading 2</h2>
+                              <ul>
+                                  <li><h3>Heading 3</h3></li>
+                              </ul>
+                          </li>
                       </ul>
-                  </ul>
+                  </li>
               </ul>
 
               <ol>
@@ -70,7 +72,7 @@
                   <summary>Even more details open</summary>
                   <p>Here are even more details about the details.</p>
               </details>
-              <details close>
+              <details data-close>
                   <summary>Even more details close</summary>
                   <p>Here are even more details about the details.</p>
               </details>
@@ -94,7 +96,7 @@
                       <tr>
                           <td><i>Italic</i></td>
                           <td><u>Underline.</u></td>
-                          <td><strike>Delete</strike></td>
+                          <td><s>Delete</s></td>
                       </tr>
                       <tr>
                           <td><abbr title="Abbreviation">Abbreviation</abbr></td>
@@ -115,7 +117,7 @@
               </article>
 
               <h3>Preformatted Text</h3>
-              <code>
+
                   <pre>
 <b>Text</b>
   in a <strong>pre</strong> element
@@ -124,19 +126,17 @@ font, and it preserves
 both           spaces and
     line breaks
                   </pre>
-              </code>
 
               <h3>Code</h3>
-              <code>
-                  <pre>
+              <pre>
+                  <code>
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-}
-                  </pre>
-              </code>
+}</code>
+              </pre>
               <hr>
 
               <h2><a name="blockquotes"></a>Blockquotes</h2>
@@ -147,7 +147,7 @@ both           spaces and
                   <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Steve Jobs</a>
               </blockquote>
 
-              <p hidden="true">And here’s a bit of trailing text.</p>
+              <div hidden>And here’s a bit of trailing text.</div>
           </section>
 
 
