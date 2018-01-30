@@ -1,0 +1,78 @@
+body {
+  background: #dcbb9a; }
+  body #content {
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 30px 30px 30px; }
+    body #content h1 {
+      text-align: center;
+      color: #893c00;
+      margin: 10px auto;
+      text-transform: capitalize; }
+    body #content h2 {
+      color: #893c00; }
+    body #content p {
+      color: #000000; }
+    body #content a {
+      color: #3d70a1; }
+    body #content img {
+      border: 2px solid #fff;
+      outline: 2px solid #893c00; }
+    body #content table {
+      border-collapse: collapse; }
+      body #content table caption {
+        text-align: right; }
+      body #content table th {
+        background: #e0e0e0;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        text-align: left;
+        font-weight: normal; }
+        body #content table th:not(:last-child) {
+          border-right: 1px solid white; }
+      body #content table td {
+        color: #000000;
+        background: #fff;
+        padding: 10px 5px 10px 25px; }
+      body #content table tr:not(:first-child) {
+        border-bottom: solid 1px #e0e0e0; }
+    body #content form {
+      color: #808080; }
+      body #content form label {
+        text-transform: uppercase;
+        margin-bottom: 5px; }
+      body #content form textarea {
+        width: 100%;
+        margin: 5px 0 15px 0; }
+      body #content form button {
+        color: #3d70a1;
+        border: 2px solid #3d70a1;
+        background: #fff;
+        text-transform: uppercase;
+        width: 25%;
+        font-size: 1.4em;
+        padding: 5px 0; }
+      body #content form .col-1 {
+        float: left;
+        width: 49%; }
+      body #content form .col-2 {
+        float: right;
+        width: 50%; }
+      body #content form input {
+        width: 100%;
+        margin: 5px 0 15px 0; }
+    body #content .brief {
+      background: #fadcba;
+      padding: 20px;
+      margin-right: 25px;
+      float: left;
+      width: 400px; }
+    body #content .img-left {
+      float: left;
+      margin-right: 27px;
+      margin-left: 2px; }
+    body #content .img-right {
+      float: right;
+      margin-left: 27px;
+      margin-right: 2px; }

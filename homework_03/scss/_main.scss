@@ -1,0 +1,155 @@
+$contentBackground: null !default;
+$bodyBackground: null !default;
+$hColor: null !default;
+$briefBackground: null !default;
+$aColor:  null !default;
+$thBackground: null !default;
+$tdBackground: null !default;
+$formColor: null !default;
+$buttonColor: null !default;
+$borderColor: null !default;
+$imgBorderColor: null !default;
+$imgOutlineColor: null !default;
+$pColor: null !default;
+$tdColor: null !default;
+$h1TextTransform: null !default;
+$briefFloat: null !default;
+
+@mixin floatedBrief {
+    margin-right: 25px;
+    float: left;
+    width: 400px;
+
+}
+
+@mixin notFloatedBrief {
+    margin-bottom: 30px;
+}
+
+
+body {
+    background: $bodyBackground;
+
+    #content {
+      width: 960px;
+      margin: 0 auto;
+      background: $contentBackground;
+      padding: 10px 30px 30px 30px;
+
+      h1 {
+          text-align: center;
+          color: $hColor;
+          margin: 10px auto;
+          text-transform: $h1TextTransform;
+      }
+
+      h2 {
+          color: $hColor;
+      }
+
+      p {
+          color: $pColor;
+      }
+
+      a {
+          color: $aColor;
+      }
+
+      img {
+          border: 2px solid $imgBorderColor;
+          outline: 2px solid $imgOutlineColor;
+      }
+
+      table {
+          border-collapse: collapse;
+
+          caption {
+              text-align: right;
+          }
+
+          th {
+              background: $thBackground;
+              text-transform: uppercase;
+              padding: 10px 25px;
+              text-align: left;
+              font-weight: normal;
+
+              &:not(:last-child) {
+                  border-right: 1px solid white;
+              }
+          }
+
+          td {
+              color: $tdColor;
+              background: $tdBackground;
+              padding: 10px 5px 10px 25px;
+          }
+
+          tr:not(:first-child) {
+               border-bottom: solid 1px $thBackground;
+          }
+      }
+      form {
+          color: $formColor;
+
+          label {
+              text-transform: uppercase;
+              margin-bottom: 5px;
+          }
+
+          textarea {
+              width: 100%;
+              margin: 5px 0 15px 0;
+          }
+
+          button {
+              color: $buttonColor;
+              border: 2px solid $buttonColor;
+              background: $contentBackground;
+              text-transform: uppercase;
+              width: 25%;
+              font-size: 1.4em;
+              padding: 5px 0;
+          }
+
+          .col-1 {
+             float: left;
+              width: 49%;
+          }
+          .col-2{
+              float: right;
+              width: 50%;
+          }
+
+          input {
+              width: 100%;
+              margin: 5px 0 15px 0;
+          }
+      }
+
+      .brief {
+          background: $briefBackground;
+          padding: 20px;
+
+          @if $briefFloat == 'true' {
+              @include floatedBrief;
+          } @else if $briefFloat == 'false' {
+              @include notFloatedBrief;
+          }
+
+
+      }
+
+      .img-left {
+          float: left;
+          margin-right: 27px;
+          margin-left: 2px;
+      }
+
+      .img-right {
+          float: right;
+          margin-left: 27px;
+          margin-right: 2px;
+      }
+    }
+}
