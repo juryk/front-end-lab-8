@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+ul{
+    list-style: none;
+}
+h4, header li a, main p {
+    color: #333;
+}
+header li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+header li a:hover {
+    color:  #39c2d7;
+}
+header li {
+    margin: 0 5px;
+}
+header{
+    margin: 0 10%;
+}
+header .logo, header nav, header li {
+    display: inline-block;
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    padding: 10px 0;
+}
+.logo {
+    height: 54px;
+    margin-left: 10px;
+}
+.banner-text {
+    position: absolute;
+    width: 35%;
+    color: white;
+    top: 10%;
+    left: 10%;
+    font-weight: bold;
+    font-size: 50px;
+}
+.articles {
+    padding: 0 10%;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.articles > div {
+    background: rgb(204, 205, 206);
+    margin: 10px;
+    padding: 10px;
+}
+.articles a > div:first-child {
+    width: 100%;
+    height: 160px;
+    margin: 0 auto;
+}
+.articles a {
+    text-decoration: none;
+}
+.articles h4 {
+    margin: 10px 0;
+}
+.articles p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.articles > div:hover {
+    background-color: #39c2d7;
+}
+.article-1 {
+    background: url('../img/news/01.jpg') no-repeat center / cover;
+}
+.article-2 {
+    background: url('../img/news/02.jpg') no-repeat center / cover;
+}
+.article-3 {
+    background: url('../img/news/03.jpg') no-repeat center / cover;
+}
+.article-4 {
+    background: url('../img/news/04.jpg') no-repeat center / cover;
+}
+.article-5 {
+    background: url('../img/news/05.jpg') no-repeat center / cover;
+}
+.article-6 {
+    background: url('../img/news/06.jpg') no-repeat center / cover;
+}
+footer{
+    background-color: #39c2d7;
+    padding: 10px 10%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer a {
+    color: #fff;
+}
+footer nav a:hover {
+    text-decoration: none;
+}
+footer nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+footer ul {
+    padding-left: 10px;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 375px;
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 899px) {
+    header {
+        padding: 0;
+        flex-direction: column;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    .logo {
+        margin: 10px 0;
+    }
+    .banner-text {
+        top: 30px;
+        font-size: 25px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+    }
+    .articles {
+        padding: 0 10px;
+        margin: 10px 0;
+        grid-template-columns: 1fr 1fr;
+    }
+    .articles a > div:first-child {
+        max-width: 300px;
+    }
+    .articles > div {
+        padding-bottom: 25px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer span {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 574px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+        margin: 0
+    }
+    .logo {
+        margin: 10px 0;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav li {
+        display: block;
+        background-color: rgb(230, 230, 230);
+        margin: 0;
+        padding: 10px 25px;
+        border-top: 1px solid rgb(188, 188, 188);
+    }
+    header nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    .banner-text {
+        top: auto;
+        bottom: 30px;
+        font-size: 25px;
+        text-align: left;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        background: #39c2d7;
+        padding: 10px;
+    }
+    .articles {
+        padding: 0 10px;
+        margin: 10px 0;
+        grid-template-columns: 1fr;
+    }
+    .articles a > div:first-child {
+        max-width: 350px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer nav li {
+        text-align: center;
+        display: list-item;
+        margin: 5px 0;
+    }
+    footer span {
+        margin: 5px 0;
+    }
+}
