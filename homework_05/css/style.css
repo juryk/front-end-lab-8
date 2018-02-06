@@ -181,6 +181,9 @@ footer ul {
         padding: 10px 25px;
         border-top: 1px solid rgb(188, 188, 188);
     }
+    header nav li:last-child {
+        border-bottom: 1px solid rgb(188, 188, 188);
+    }
     header nav ul {
         padding: 0;
         margin: 0;
