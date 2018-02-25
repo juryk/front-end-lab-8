@@ -1,7 +1,10 @@
-/**
- * Your debounce function goes here
- * function(){}
- */
+function debounce(callback, timeout) {
+    let timerId;
+    return () => {
+        clearTimeout(timerId);
+        timerId = setTimeout(callback, timeout);
+    }
+}
 
 // Example
 
@@ -15,14 +18,6 @@ function increaseIteratorBy1() {
 
 function printIteratorValue() {
   console.log('Iterator value ', iterator);
-}
-
-function debounce(callback, timeout) {
-    let timerId;
-    return () => {
-        clearTimeout(timerId);
-        timerId = setTimeout(callback, timeout);
-    }
 }
 
 var increaseIterator = debounce(increaseIteratorBy1, 1000);
