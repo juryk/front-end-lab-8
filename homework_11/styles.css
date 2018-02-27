@@ -1,0 +1,29 @@
+ul {
+    list-style: none;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+.folder i.material-icons {
+    color: #f4c242;
+}
+.file i.material-icons {
+    color: #ccc;
+}
+p{
+    font-style: italic;
+    margin: 0;
+}
+li {
+    position: relative;
+    height: 24px;
+    padding-top: 5px;
+}
+i.material-icons {
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
