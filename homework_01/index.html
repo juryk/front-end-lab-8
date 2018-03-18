@@ -1,163 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>hw</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Yoga pilates</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet/less" href="styles/styles.less">
+    <script src="js/less.min.js"></script>
 </head>
-
 <body>
-  <div id="wrapper">
-    <div id="main">
-      <div id="container">
-        <div id="content" role="main">
-          <!-- TODO: Content goes here -->
 
-
-          <header>
-              <img src="./EPAM_logo.svg" alt="EPAM logo">
-          </header>
-
-
-          <nav>
-              <a href="#html"><b>HTML</b></a>
-              <a href="#list"><b>List</b></a>
-              <a href="#table"><b>Table</b></a>
-              <a href="#text-formats"><b>Text formats</b></a>
-              <a href="#blockquotes"><b>Blockquotes</b></a>
-          </nav>
-
-
-          <section>
-              <hr>
-              <h1><a name="html"></a><b>HTML Elements</b></h1>
-              <hr>
-              <h2><a name="list"></a>Ordered List</h2>
-
-              <ul>
-                  <li><h1>Heading 1</h1>
-                      <ul>
-                          <li><h2>Heading 2</h2>
-                              <ul>
-                                  <li><h3>Heading 3</h3></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-
-              <ol>
-                  <li><h4>Heading 4</h4>
-                      <ol>
-                          <li><h5>Heading 5</h5>
-                              <ol>
-                                  <li><h6>Heading 6</h6></li>
-                              </ol>
-                          </li>
-                      </ol>
-                  </li>
-              </ol>
-
-              <h3>Definition List</h3>
-              <dl>
-                  <dt>defines terms 1</dt>
-                  <dd>description 1</dd>
-                  <dt>defines terms 2</dt>
-                  <dd>description</dd>
-              </dl>
-
-              <h2>Details</h2>
-              <details open>
-                  <summary>Even more details open</summary>
-                  <p>Here are even more details about the details.</p>
-              </details>
-              <details data-close>
-                  <summary>Even more details close</summary>
-                  <p>Here are even more details about the details.</p>
-              </details>
-              <hr>
-
-              <h2><a name="table"></a>Table</h2>
-              <table>
-                  <thead>
-                      <tr>
-                          <th>Elements</th>
-                          <th>Elements</th>
-                          <th>Elements</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><strong>Strong</strong></td>
-                          <td>H<sub>2</sub>O</td>
-                          <td><a href="">Test link</a></td>
-                      </tr>
-                      <tr>
-                          <td><i>Italic</i></td>
-                          <td><u>Underline.</u></td>
-                          <td><s>Delete</s></td>
-                      </tr>
-                      <tr>
-                          <td><abbr title="Abbreviation">Abbreviation</abbr></td>
-                          <td>5<sup>3</sup>=125</td>
-                          <td><ins>Inserted</ins></td>
-                      </tr>
-                  </tbody>
-              </table>
-              <hr>
-
-              <h2><a name="text-formats"></a>Text formats</h2>
-              <h3>Article Text</h3>
-              <article>
-                  <header>
-                      <h2>Article title</h2>
-                  </header>
-                  <p>Article description</p>
-              </article>
-
-              <h3>Preformatted Text</h3>
-
-                  <pre>
-<b>Text</b>
-  in a <strong>pre</strong> element
-    is displayed in a fixed-width
-font, and it preserves
-both           spaces and
-    line breaks
-                  </pre>
-
-              <h3>Code</h3>
-              <pre>
-                  <code>
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}</code>
-              </pre>
-              <hr>
-
-              <h2><a name="blockquotes"></a>Blockquotes</h2>
-              <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
-              <blockquote>
-                  Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
-                  <br>
-                  <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Steve Jobs</a>
-              </blockquote>
-
-              <div hidden>And here’s a bit of trailing text.</div>
-          </section>
-
-
-          <footer>
-              Copyright Epam Systems
-          </footer>
+    <nav class="navbar navbar-light navbar-expand-md bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</body>
+    </nav>
 
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <h1>Yoga Pilates</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12 col-lg-7">
+                <img src="img/yoga.jpg" alt="Yoga" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-lg-5 mt-3">
+                <h3>Class description</h3>
+                <p>This workout uses a series of exercise routines designed to increase your core strength & improve your posture, energy, & flexibility. Pilates work is powered by breath, flow, & centering. By focusing on the mid-body connection & using more efficient form, this workout helps develop a stronger, leaner, healthier body. Appropriate for all fitness levels.</p>
+                <ul>
+                    <li>One Personal Trainer</li>
+                    <li>Big gym space for training</li>
+                    <li>Free tools & props</li>
+                    <li>Free locker</li>
+                    <li>Free before / after shower</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <h3>Related classes</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 col-md-3 mb-3">
+                <div class="cardio">
+                    <img src="img/cardio-kickbox.jpg" alt="Cardio kickbox image">
+                    <p>Cardio kickboxing</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="fitness">
+                    <img src="img/fitness.jpg" alt="Fitness image">
+                    <p>Fitness xpress</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="zumba">
+                    <img src="img/zumba.jpg" alt="Zumba image">
+                    <p>Zumba</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="bootcamp">
+                    <img src="img/bootcamp.jpg" alt="Bootcamp image">
+                    <p>Bootcamp</p>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-3">
+            <p>&copy Epam Front-end lab, 2018</p>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
 </html>
