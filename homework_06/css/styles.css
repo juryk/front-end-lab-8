@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0
+}
+.center-align {
+    text-align: center;
+}
+.content {
+    margin: 30px 20%
+}
+.ipInput {
+    width: 100%;
+    border: none;
+    height: 30px;
+    border-bottom: 2px solid #42d9f4;
+    display: block;
+    caret-color: #42d9f4;
+    text-align: center;
+    font-size: 1.5em;
+    color: #314747;
+}
+input:focus{
+    outline: none;
+}
+button {
+    width: 200px;
+    text-align: center;
+    margin: 15px auto;
+    background: #42d9f4;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    outline: none;
+    padding: 10px 0;
+}
+button:hover{
+    cursor: pointer;
+}
+table{
+    width: 75%;
+    color: #314747;
+    margin: auto;
+}
+.ipDetails th, .ipDetails td {
+    padding: 10px 15px;
+    text-align: left;
+}
+.ipDetails tr:nth-child(even){
+   background-color: #f0f0f0;
+}
+.ipDetails tr:nth-child(odd){
+    background-color: #fcfcfc;
+}
+.ipDetails tr:hover {
+    background-color: white;}

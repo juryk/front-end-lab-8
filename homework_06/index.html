@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW6</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="content">
+        <input id="ipInput" class="ipInput" type="text">
+        <div class="center-align">
+            <button class="trackIp" type="button" onclick="getIP()">Track ip</button>
+            <img id="loading" class="loading" src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif?w=500" alt="loading" hidden="true">
+            <table id="ipDetails" class="ipDetails">
+            </table>
+            <h2 id="message" class="message"></h2>
+            <button id="validateResponse" class="validationResponseBtn" type="button" hidden="true" onclick="validateResponse()">Validate Response</button>
+        </div>
+    </div>
+
+    <script src="./js/task1.js"></script>
+    <script src="./js/task2.js"></script>
+</body>
+</html>
