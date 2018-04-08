@@ -1,0 +1,74 @@
+body {
+    background-color: #e6ac00;
+}
+#container {
+    padding: 0 15%;
+}
+.header {
+    text-align: center;
+}
+.player-1, .player-2 {
+    width: 48%;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 0;
+    font-size: 2em;
+}
+.row {
+    height: 50px;
+}
+.square {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.square:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid black;
+    /*transform: translate(-50%);*/
+}
+.square:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    left: 0;
+    border-top: 2px solid black;
+    /*transform: translate(-50%);*/
+}
+.stone {
+    border-radius: 50%;
+    position: absolute;
+    margin: 3px 3px;
+    width: 44px;
+    height: 44px;
+    display: none;
+}
+.isBlack {
+    display: inline-block;
+    background-color: black;
+}
+.isWhite {
+    display: inline-block;
+    background-color: white;
+}
+.win-info{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: none;
+    top: 250px;
+    z-index: 2;
+}
+.underlined {
+    text-decoration: underline;
+}
