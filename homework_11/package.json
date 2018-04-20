@@ -1,8 +1,7 @@
 {
-  "name": "tools-hw",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/app.js",
   "scripts": {
        "start": "webpack-dev-server --config webpack.config.js"
   },
