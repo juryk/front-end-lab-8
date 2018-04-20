@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/regal.png);
+}
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+.container > input {
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    border: 3px solid black;
+    padding: 0 6px;
+}
+.container > input::placeholder {
+    color: black;
+    padding-left: 2px;
+}
+.container > div.buttons > button {
+    display: inline-block;
+    margin: 3px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+}
+.container div.output {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
