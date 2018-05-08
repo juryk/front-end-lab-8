@@ -1,0 +1,38 @@
+.selected-color-card {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    // float:right;
+    border: 2px solid;
+
+    i {
+        color: white;
+        background: red;
+        border-radius: 50%;
+        font-size: 15px;
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top: -7px;
+        left: -7px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.p3 {
+    left: 10px;
+}
+.p2 {
+    left: 20px;
+}
+.p1 {
+    left: 30px;
+}
+.p0 {
+    left: 40px;
+}

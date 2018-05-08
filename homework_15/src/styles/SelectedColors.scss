@@ -1,0 +1,33 @@
+.selected-colors {
+    width: auto;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    // position: absolute;
+    // right: 20px;
+}
+
+.selected-color-default-card {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    float:right;
+    background-color: white;
+}
+.purple {
+    // right: 25px;
+    border: 2px solid purple;
+    z-index: 2;
+}
+.blue {
+    left: 10px;
+    border: 2px solid blue;
+    z-index: 1;
+}
+
+.grey{
+    left: 20px;
+    border: 2px solid grey;
+}

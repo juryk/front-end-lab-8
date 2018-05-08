@@ -1,0 +1,26 @@
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+
+    button {
+        background: white;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        position: relative;
+        bottom: -161px;
+        left: -60px;
+
+        i {
+            padding-top: 3px;
+        }
+
+        span {
+            position: relative;
+            bottom: 7px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// General
+@import './styles/fonts';
+@import './styles/colors';
+
+
+/* Import your components styles here */
+body {
+    padding: 20px;
+}
+.colors-amount {
+    color: grey;
+    text-align: right;
+    padding-top: 10px;
+}
+p{
+    color: grey;
+}
+@import './styles/Filter.scss';
+@import './styles/ColorCard.scss';
+@import './styles/SelectedColors.scss';
+@import './styles/SelectedColor.scss';
+@import './styles/ColorBoard.scss'
