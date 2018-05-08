@@ -111,14 +111,9 @@ class App extends Component {
                 <AmountOfColorItems amount={filteredColors.length} />
 
                 { !isLoaded ? <p style={{"textAlign": "center"}}>Loading...</p> : <ColorsBoard colors={filteredColors} selectColorById={this.selectColorById}/>}
-
-
-
             </div>
-    //   <div>Who-ho! It works!</div>
         );
     }
 }
 
-// Note: Hot reloading occurs after you save file in the editor.
 export default hot(module)(App);
