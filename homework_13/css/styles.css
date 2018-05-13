@@ -1,0 +1,87 @@
+body {
+    margin: 0 30px 30px 30px;
+
+}
+.blog-item {
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    background: #dee2e8;
+    margin: 25px;
+}
+.blog-item img {
+    width: 85%;
+}
+
+.categories {
+    position: absolute;
+    top: 83px;
+    right: 30px;
+    border: 1px solid black;
+    padding: 20px 20px;
+}
+
+.post-categories {
+    padding-left: 25px;
+}
+
+.post-categories span {
+    text-align: left;
+    float: left;
+    color: blue;
+    margin-right: 5px;
+}
+
+.post-description {
+    text-align: left;
+    padding: 20px;
+}
+.edit {
+    text-align: right;
+    color: blue;
+}
+.title-edit-input {
+    padding: 20px;
+}
+.description-edit {
+    padding: 20px;
+}
+.description-edit textarea {
+    width: 100%;
+    height: 70px;
+}
+
+.add-btn{
+    margin-left: 25px;
+    color: blue;
+    background: white;
+    border: 1px solid blue;
+    padding: 5px;
+    outline: none;
+}
+.add-post-form {
+    width: 70%;
+    padding: 20px;
+    background: #dee2e8;
+    margin: 25px;
+}
+.input-set {
+    margin-bottom: 10px;
+}
+.input-set input, .input-set textarea {
+    width: 350px;
+}
+.input-set textarea {
+    height: 70px;
+}
+div.label {
+    display: inline-block;
+    width: 100px;
+}
+.add-post {
+    color: blue;
+    background: #dee2e8;
+    border: 1px solid blue;
+    padding: 5px;
+    outline: none;
+}

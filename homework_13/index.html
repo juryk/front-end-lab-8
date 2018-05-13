@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/app.js"></script>
+</head>
+<body ng-app="myBlog" ng-controller="PostListController">
+    <h1>My blog</h1>
+    <div ng-repeat="post in posts | filter:{categories:filterByCat} | filter:{title:filterByTitle}" class="blog-item">
+        <div class="post" ng-hide="post.edit">
+            <img ng-src="assets/{{post.img}}" />
+            <h2>{{post.title}}</h2>
+            <div class="post-categories">
+                <span ng-repeat="category in post.categories" ng-click="filterByCategory(category)">{{category}}<span>
+            </div>
+            <br>
+            <div class="post-description">{{post.description}}</div>
+            <div class="edit" ng-click="setEditMode(post)">edit</div>
+        </div>
+        <div class="editPost" ng-hide="!post.edit">
+            <img ng-src="assets/{{post.img}}" />
+            <div class="title-edit-input">
+                <input type="text" ng-model="post.edited.title" ng-required="required"/>
+            </div>
+            <div class="post-categories">
+                <span ng-repeat="category in post.categories">{{category}}<span>
+            </div>
+            <div class="description-edit">
+                <textarea ng-model="post.edited.description" ng-required="required"/></textarea>
+            </div>
+
+            <div class="edit" ng-click="disableEditMode(post)" >save</div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <p>Categories</p>
+        <ul>
+            <li ng-click="filterByCategory('')">All</li>
+            <li ng-repeat="category in categories" ng-click="filterByCategory(category)">{{category}}</li>
+        </ul>
+        <p>Search by title</p>
+        <input type="text" ng-model="filterByTitle" placeholder="place title"/>
+    </div>
+
+    <button class="add-btn" ng-click="showForm()">Add post</button>
+
+    <form class="add-post-form" ng-submit="add(post)" ng-if="showAddPostForm">
+        <div class="input-set">
+            <div class="label">Title:</div>
+            <input type="text" ng-model="post.title" placeholder="Title..." ng-required="required"/>
+        </div>
+        <div class="input-set">
+            <div class="label">Categories: </div>
+            <input type="text" ng-model="post.categories" placeholder="Categories..." ng-required="required"/>
+        </div>
+        <div class="input-set">
+            <div class="label">Description:</div>
+            <textarea ng-model="post.description" placeholder="Description..." ng-required="required"/></textarea>
+        </div>
+        <div class="input-set">
+            <div class="label">Photo: </div>
+            <input type="text" ng-model="post.img" placeholder="Photo..."/>
+        </div>
+        <input class="add-post" type="submit" value="Add" />
+    </form>
+</body>
+</html>
